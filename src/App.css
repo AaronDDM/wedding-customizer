@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.copyright {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.model-icon {
+    padding: 1rem;
+    height: 100px;
+    border-radius: 5rem;
+    pointer-events: none;
+}
+
+.panel-body {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+.model-box {
+    display: inline-block;
+    z-index: 10;
+    cursor: move;
+    float: left;
+}
+
+.selected-model-box {
+    opacity: 1;
+
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px dotted #CCC;
+    text-align: center;
+}
+
+.dropZone-enter {
+    transform: scale(0.01);
+}
+
+.dropZone-enter.dropZone-enter-active {
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+
+.dropZone-leave {
+    opacity: 1;
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+
+.dropZone-leave.dropZone-leave-active {
+    transform: scale(0.01);
+}
+
+.over {
+    z-index: 0;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.model-name {
+    padding: 1rem;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Satisfy', cursive;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+.btn-delete-model {
+    position: absolute;
+    right: -15px;
+    top: -10px;
+
+    font-size: 20px;
+
+    color: red;
+
+    background: none;
+    border: 0;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.btn-delete-model:hover {
+    color: #740000;
+}
+
+.btn-delete-model:focus {
+    outline: none;
+}
+
+.preview-panel .panel-body {
+    height: 600px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0;
+}
+
+.preview-panel .panel-body::-webkit-scrollbar-track{
+    background-color: #d8d8d8;
+    height: 15px;
+}
+
+.preview-panel .panel-body::-webkit-scrollbar-track-piece {
+    background-color: #5e5e5e;
+}
+
+.event-time {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+}
+
+.section-one,
+.section-two {
+    color: #ffffff;
+    background-color: #02172A;
+}
+
+.section-three {
+    padding: 3rem 0;
+}
+
+.bride-groom-names {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.bride-groom-names > div {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.bride-groom-names .couple-name {
+    border-bottom: 3px solid #DB3E8B;
+    margin-bottom: 6px;
+}
+
+.bride-groom-names .ampersand {
+    vertical-align: middle;
+    margin-top: 3%;
+    font-family: 'Satisfy', cursive;
+    font-size: 6rem;
+    color: #DB3E8B;
+}
+
+.bride-groom-names .parents-of {
+    display: block;
+    font-size: 2.0rem;
+}
+
+.bride-groom-names .parents-of div {
+    display: block;
+    color: #ffffff;
+}
+
+.bride-groom-names .parents-of div:first-child {
+    font-family: sans-serif;
+}
+
+.bride-groom-names .bride-name,
+.bride-groom-names .groom-name {
+    color: #FCC17F;
+    font-family: 'Satisfy', cursive;
+    font-size: 6rem;
+}
+
+.preview-models {
+    text-align: center;
+}
